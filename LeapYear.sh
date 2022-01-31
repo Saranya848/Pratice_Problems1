@@ -1,7 +1,7 @@
 echo "LEAP YEAR SHELL SCRIPT"
 echo -n "Enter a year:"
 read year_checker
-if [ `expr $year_checker % 4` -eq 0 ]
+if [ $year_checker % 4 -eq 0 && $year_checker % 100 -ne 0 || $year_checker % 400 -eq 0]
 then
 	echo "$year_checker is a leap year"
 else
